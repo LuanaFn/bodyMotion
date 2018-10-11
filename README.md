@@ -4,8 +4,8 @@
 1. Install [Node.js](https://nodejs.org/) & [MongoDB](https://www.mongodb.org/) if you haven't already.
 2. Clone this repository and install its dependencies.
 		
-		> git clone git://github.com/braitsch/node-login.git node-login
-		> cd node-login
+		> git clone https://github.com/LuanaFn/bodyMotion.git
+		> cd bodyMotion
 		> npm install
 		
 3. In a separate shell start the MongoDB daemon.
