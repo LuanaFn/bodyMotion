@@ -46,7 +46,7 @@ module.exports = {
 			res.redirect('/');
 		}	else{
 			res.render('home', {
-				title : 'Control Panel',
+				title : 'Body Motion',
 				countries : CT,
 				udata : req.session.user
 			});

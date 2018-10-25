@@ -1,0 +1,26 @@
+
+extends layout
+
+block content
+
+	nav.navbar.navbar-default
+		.container
+			.navbar-header
+				.navbar-brand Body Motion
+			ul.nav.navbar-nav.navbar-right
+				li
+					.navbar-btn#btn-logout.btn.btn-default
+						| Sign Out
+	.container
+		.card
+			.card-body
+				.card-title !{title}
+				.card-text
+					block content_interno
+	include modals/alert
+	include modals/confirm
+
+block scripts
+	script(src='/js/views/home.js')
+	script(src='/js/controllers/homeController.js')
+	script(src='/js/form-validators/accountValidator.js')

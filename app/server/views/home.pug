@@ -1,22 +1,6 @@
 
-extends layout
+extends layout_interno
 
-block content
+block content_interno
 
-	nav.navbar.navbar-default.navbar-fixed-top
-		.container
-			.navbar-header
-				.navbar-brand Control Panel
-			ul.nav.navbar-nav.navbar-right
-				li
-					.navbar-btn#btn-logout.btn.btn-default
-						| Sign Out
-
-	include account
-	include modals/alert
-	include modals/confirm
-
-block scripts
-	script(src='/js/views/home.js')
-	script(src='/js/controllers/homeController.js')
-	script(src='/js/form-validators/accountValidator.js')
+	
