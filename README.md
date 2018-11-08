@@ -12,11 +12,13 @@
 
 		> mongod
 
-4. From within the node-login directory, start the server.
+4. Copie o arquivo .env_example para um arquivo .env e adicione as configurações certas
+
+5. From within the node-login directory, start the server.
 
 		> node app
 		
-5. Open a browser window and navigate to: [http://localhost:3000](http://localhost:3000)
+6. Open a browser window and navigate to: [http://localhost:3000](http://localhost:3000)
 
 ## Password Retrieval
 

@@ -1,9 +1,8 @@
 
 var UsuarioController = require('./controllers/UsuarioController');
+var JogoController = require('./controllers/JogoController');
 
 module.exports = function(app) {
-
-	console.log(UsuarioController);
 
 // main login page //
 	app.get('/', UsuarioController.main_get);
@@ -39,7 +38,11 @@ module.exports = function(app) {
 	app.post('/delete', UsuarioController.deletar_post);
 	
 	app.get('/reset', UsuarioController.reset_get);
+
+// jogo //
 	
+	app.get('/jogar', JogoController.jogar_get);
+		
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });
 
 };

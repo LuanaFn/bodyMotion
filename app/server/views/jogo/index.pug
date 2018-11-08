@@ -1,0 +1,23 @@
+
+extends ../layout_interno
+
+block content_interno
+	//- importa o opencv
+	script(src="/vendor/opencv.js")
+
+	//- partição onde será exibido o vídeo tratado -->
+	video(id="videoInput" width="600" height="600" style="display:none")
+
+	//- canvas para transferir dados para o ImageData frame por frame -->
+	canvas(id="canvasFrame")
+
+	//----------------------------------------------------------------------------
+
+	//- labels que vão exibir os pontos do jogador
+	
+
+	//- canvas para mostrar o video que o opencv recebe -->
+	canvas(id="canvasOutput")
+
+block scripts
+	script(src='/js/views/jogo.js')

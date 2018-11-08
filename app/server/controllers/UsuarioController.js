@@ -33,7 +33,8 @@ module.exports = {
 					res.cookie('user', o.user, { maxAge: 900000 });
 					res.cookie('pass', o.pass, { maxAge: 900000 });
 				}
-				res.status(200).send(o);
+				//res.status(200).send(o);
+				res.redirect('/home');
 			}
 		});
 	},
